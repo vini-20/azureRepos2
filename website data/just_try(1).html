@@ -1,0 +1,50 @@
+<html>
+<head>
+	<style>
+		#slideshow{
+			margin:50px auto;
+			position:relative;
+			width:240px;
+			height:249px;
+			padding: 10x;
+		}
+		#slideshow>div{
+			position:absolute;
+			top: 10px;
+			left: 10px;
+			right: 10px;
+			bottom: 10px;
+		}
+	</style>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("slideshow");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+	</script>
+</head>
+<body>
+	<div id="slideshow">
+	<div>
+		<img src="chevrolet_corvette.jpg">
+	</div>
+	<div>
+		<img src="Ford_car_copy.jpg">
+	</div>
+	<div>
+		<img src="Citroen.jpg">
+	</div>
+	</div>
+</body>
+</html>
+	

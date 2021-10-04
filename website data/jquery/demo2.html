@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo 2</title>
+    <link href="2/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="2/js-image-slider.js" type="text/javascript"></script>
+    <link href="generic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   
+    <div id="sliderFrame">
+        <div id="slider">
+    
+            <img src="images/newCapture.jpg">
+            <img src="images/capture.jpg">
+            <img src="images/Ford_car_copy.jpg">
+            <img src="images/newimage.jpg">
+        </div>
+        <!--thumbnails-->
+        <div id="thumbs">
+            <div class="thumb">
+                <div class="frame"><img src="images/newCapture.jpg" /></div>
+                <div class="thumb-content"><p>HTML Content</p>Thumbnails allows any HTML content</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="thumb">
+                <div class="frame"><img src="images/capture.jpg" /></div>
+                <div class="thumb-content"><p>Customizable</p>Thumbnail style is customizable</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="thumb">
+                <div class="frame"><img src="images/Ford_car_copy.jpg" /></div>
+                <div class="thumb-content"><p>Variety of Layouts</p>Just a CSS tweak.</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="thumb">
+                <div class="frame"><img src="images/newimage.jpg" /></div>
+                <div class="thumb-content"><p>Integration</p>Built-in functions for the thumbnails</div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <!--clear above float:left elements. It is required if above #slider is styled as float:left. -->
+        <div style="clear:both;height:0;"></div>
+    </div>
+    
+</body>
+</html>
